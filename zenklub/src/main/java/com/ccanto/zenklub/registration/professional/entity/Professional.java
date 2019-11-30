@@ -1,4 +1,4 @@
-package com.ccanto.zenklub.professional;
+package com.ccanto.zenklub.registration.professional.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -17,6 +17,12 @@ public class Professional {
 
     @Column(nullable = false)
     private String lastName;
+
+    @Column(nullable = false)
+    private String mail;
+
+    @Column(nullable = false)
+    private String password;
 
     @Column
     private String description;
@@ -67,6 +73,22 @@ public class Professional {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getDescription() {
@@ -147,6 +169,8 @@ public class Professional {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", mail='" + mail + '\'' +
+                ", password='" + password + '\'' +
                 ", description='" + description + '\'' +
                 ", city='" + city + '\'' +
                 ", country='" + country + '\'' +
