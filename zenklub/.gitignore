@@ -28,7 +28,6 @@ logs
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 target/*
-target
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
