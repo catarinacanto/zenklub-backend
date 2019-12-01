@@ -4,6 +4,7 @@ import com.ccanto.zenklub.registration.client.entity.Client;
 import com.ccanto.zenklub.registration.client.repository.ClientRepository;
 import com.ccanto.zenklub.registration.exception.ClientNotFoundException;
 import com.ccanto.zenklub.registration.exception.ProfessionalNotFoundException;
+import com.sun.codemodel.internal.JTryBlock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
