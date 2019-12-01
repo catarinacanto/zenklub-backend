@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/professional-registration")
-public class RegistrationController {
+public class ProfessionalRegistrationController {
 
     @Autowired
     private ProfessionalRepository professionalRepository;
