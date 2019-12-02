@@ -19,10 +19,10 @@ public class Schedule {
     private String days;
 
     @Column(nullable = false)
-    private Time startTime;
+    private String startTime;
 
     @Column(nullable = false)
-    private Time endTime;
+    private String endTime;
 
     @Column(nullable = false)
     private Date createDate;
@@ -54,19 +54,19 @@ public class Schedule {
         this.days = days;
     }
 
-    public Time getStartTime() {
+    public String getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(Time startTime) {
+    public void setStartTime(String startTime) {
         this.startTime = startTime;
     }
 
-    public Time getEndTime() {
+    public String getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(Time endTime) {
+    public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
 
